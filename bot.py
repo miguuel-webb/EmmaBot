@@ -33,7 +33,6 @@ respuestas_hola = [
     "Hola, espero que tengas un buen día ✨",
     "Ey ey, ¿qué se cuenta?",
     "Llegó el saludo oficial de Emma.bot 🤖",
-
     "¿Otra vez tú por aquí? 😂",
     "Mira quién apareció jajaja",
     "Pensé que nunca ibas a saludar 😴",
@@ -44,7 +43,6 @@ respuestas_hola = [
     "Qué hubo, leyenda 😎",
     "Todo bien por acá, ¿y tú?",
     "Hola humano, sigo funcionando 🤖",
-
     "¿Eso era todo? ¿Un hola? 😂",
     "Wow, qué saludo tan elaborado 😐",
     "Me esforcé más yo respondiendo que tú escribiendo eso 😭",
@@ -55,7 +53,6 @@ respuestas_hola = [
     "Te estaba esperando (mentira, soy un bot) 🤖",
     "Otra persona activando mi comando 😭",
     "Mi programación dice que debo saludarte 😎",
-
     "Epa mi llave, qué más pues 🔥",
     "Quiubo parcero, todo bien?",
     "Buenas buenas 😎",
@@ -66,7 +63,6 @@ respuestas_hola = [
     "Un saludo de calidad premium 😂",
     "Hola hola, doble saludo para ti",
     "Klk, ¿qué me cuenta el más insano del Blood Strike?",
-
     "¿Otra vez usando comandos? Ya duermeee",
     "Creo que te gusta hablar conmigo 🤨",
     "Holaaaa me alegra verte 🙄",
