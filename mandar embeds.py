@@ -3,7 +3,7 @@ from discord.ext import commands
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix="emma", intents=intents)
 @bot.event
 async def on_ready():
     print(f"{bot.user} se ha activado corrrectamente.")
@@ -14,7 +14,7 @@ async def prueba(ctx):
     canal = bot.get_channel(1527102240412799067)
 
     embed = discord.Embed(
-        description=(),
+        description=("aprobando, prueba pasada"),
         color=0xbf58ca
     )
     await canal.send(embed=embed)
