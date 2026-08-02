@@ -1,6 +1,15 @@
 import discord
 from discord.ext import commands
 import random
+import os
+from dotenv import load_dotenv
+import servidorweb 
+
+# Cargar el .env ANTES de buscar la variable
+load_dotenv()
+
+# Guardar el token en la variable
+DISCORD_TOKEN = os.getenv("TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -15,7 +24,6 @@ bot = commands.Bot(
 @bot.event
 async def on_ready():
     print(f"Bot conectado como {bot.user}")
-
 
 respuestas_hola = [
     "klk bb soy galcii, na mentira jaja",
@@ -75,7 +83,6 @@ respuestas_hola = [
     "Hola, ¿qué me cuentas?"
 ]
 
-
 @bot.event
 async def on_message(message):
 
@@ -86,7 +93,7 @@ async def on_message(message):
     # Convierte todo a minúsculas
     texto = message.content.lower()
 
-    # Detecta "Emma hola"
+    # Detecta "Emma hl"
     if texto.startswith("emma hl"):
 
         mensaje = random.choice(respuestas_hola)
@@ -97,15 +104,13 @@ async def on_message(message):
         )
 
         await message.reply(embed=embed)
-#-------------------final de saludo-------------------
 
     # Mantiene funcionando otros comandos
     await bot.process_commands(message)
+#-------------------final de saludo-------------------
 
+# Iniciar servidor web
+servidorweb.comandodeinicio()
 
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-bot.run(os.getenv("TOKEN"))
+# Arrancar el bot con la variable correcta
+bot.run(DISCORD_TOKEN)
