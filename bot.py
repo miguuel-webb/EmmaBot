@@ -2,8 +2,10 @@ import discord
 from discord.ext import commands
 import random
 import os
+import servidorweb
 from dotenv import load_dotenv
-import servidorweb 
+load_dotenv() 
+
 
 # Cargar el .env ANTES de buscar la variable
 load_dotenv()
